@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 new Call(getApplicationContext(), number.getText().toString());
+                DataManager.call = true;
             }
         });
 
